@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "vf",
+	"version": "${version}",
+	"name": "Villager Follow",
+	"description": "This mod allows you to make it so villagers follow a player when they are holding a item(configurable)",
+	"authors": [
+		"ColorizedBlock",
+		"Sage",
+		"DecodedFinn"
+	],
+	"contact": {
+	},
+	"license": "MIT",
+	"icon": "assets/vf/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"colorizedblock.vf.VillagerFollow"
+		],
+		"client": [
+			"colorizedblock.vf.VillagerFollowClient"
+		],
+		"fabric-datagen": [
+			"colorizedblock.vf.VillagerFollowDataGenerator"
+		]
+	},
+	"mixins": [
+		"vf.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.19",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
